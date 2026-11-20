@@ -1,0 +1,5 @@
+_scratch/
+*.blend1
+__pycache__/
+# Review renders written by the build scripts; regenerate them rather than store them.
+previews/

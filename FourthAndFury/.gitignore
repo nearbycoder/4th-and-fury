@@ -1,0 +1,10 @@
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.xcworkspace
+.DS_Store
+# Packaged builds (./package.sh) and cooker by-products
+Packaged/
+Build/Mac/FileOpenOrder/
+Build/**/*.PackageVersionCounter

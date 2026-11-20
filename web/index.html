@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>4th &amp; Fury — Play</title>
+    <meta name="description" content="Seven-a-side arcade football for one to eight players on one screen. Play 4th & Fury in your browser." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <style>
+      :root { color-scheme: dark; }
+      html, body { margin: 0; height: 100%; background: #05070c; overflow: hidden; }
+      body { font-family: 'Barlow Condensed', system-ui, sans-serif; color: #fff; -webkit-user-select: none; user-select: none; }
+      #stage { position: fixed; inset: 0; }
+      #stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+      #hud { pointer-events: none; }
+      #boot {
+        position: fixed; inset: 0; display: grid; place-items: center; background: radial-gradient(ellipse at 50% 35%, #1a2233 0%, #05070c 70%);
+        transition: opacity .5s ease; z-index: 5;
+      }
+      #boot.done { opacity: 0; pointer-events: none; }
+      #boot .card { width: min(560px, calc(100vw - 32px)); text-align: center; }
+      #boot img { width: 100%; height: auto; }
+      #boot .bar { margin: 28px auto 12px; height: 8px; width: 70%; background: #1b2130; transform: skewX(-18deg); overflow: hidden; }
+      #boot .fill { height: 100%; width: 0; background: linear-gradient(90deg, #ff4d08, #ffc211); transition: width .2s ease; }
+      #boot .label { font: 600 20px/1.2 system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #9aa3b2; }
+      #boot .start {
+        display: none; margin: 18px auto 0; padding: 14px 34px; border: 0; background: #ff4d08; color: #fff; cursor: pointer;
+        font: 800 26px/1 system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase; transform: skewX(-12deg);
+      }
+      #boot .start:focus-visible { outline: 3px solid #ffc211; outline-offset: 4px; }
+      #boot .hint { margin-top: 16px; font: 500 16px/1.4 system-ui, sans-serif; color: #8b93a3; }
+      #boot.ready .start { display: inline-block; }
+      #boot .error { color: #ff6b5b; }
+      #back { position: fixed; top: 10px; left: 12px; z-index: 6; font: 600 13px system-ui, sans-serif; color: #8b93a3; text-decoration: none; opacity: .0; transition: opacity .3s; }
+      #back:hover, #back:focus-visible, body:not(.playing) #back { opacity: .9; }
+    </style>
+  </head>
+  <body>
+    <a id="back" href="../">← 4th &amp; Fury home</a>
+    <div id="stage">
+      <canvas id="game" aria-label="4th & Fury"></canvas>
+      <canvas id="hud" aria-hidden="true"></canvas>
+    </div>
+    <div id="boot" role="status" aria-live="polite">
+      <div class="card">
+        <img src="./assets/textures/title.webp" alt="4th & Fury" width="1024" height="576" />
+        <div class="bar"><div class="fill"></div></div>
+        <div class="label">Loading</div>
+        <button class="start" type="button">Enter the stadium</button>
+        <div class="hint">Keyboard: W A S D + G (or Space) · Second player: arrows + K · Gamepads welcome</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

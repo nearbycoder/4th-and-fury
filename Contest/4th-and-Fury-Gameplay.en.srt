@@ -1,0 +1,28 @@
+1
+00:00:00,080 --> 00:00:01,100
+[Rock music and stadium crowd]
+
+2
+00:00:01,120 --> 00:00:03,700
+ANNOUNCER: The quarterback goes down!
+
+3
+00:00:13,790 --> 00:00:14,650
+[Referee’s whistle]
+
+4
+00:00:16,940 --> 00:00:18,200
+[Whistle, then pads collide]
+
+5
+00:00:24,850 --> 00:00:25,570
+QUARTERBACK: Hut!
+
+6
+00:00:29,280 --> 00:00:31,720
+ANNOUNCER: He’s in! Touchdown!
+
+7
+00:00:32,350 --> 00:00:35,050
+[Rock theme fades]
+

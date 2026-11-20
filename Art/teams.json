@@ -1,0 +1,13 @@
+{
+  "league": "Fury Football League",
+  "teams": [
+    { "id": "sasquatch",   "city": "Portland",  "name": "Sasquatch",   "abbr": "POR", "primary": "#1F6B3A", "secondary": "#EFE6CC", "accent": "#6B4423", "helmet": "#1F6B3A", "logo": "a huge bare footprint with five toes, bold and a little menacing" },
+    { "id": "volcanoes",   "city": "Honolulu",  "name": "Volcanoes",   "abbr": "HNL", "primary": "#1A1A1E", "secondary": "#FF5A1F", "accent": "#FFC21A", "helmet": "#1A1A1E", "logo": "an erupting volcano: dark cone, orange lava burst" },
+    { "id": "icebreakers", "city": "Anchorage", "name": "Icebreakers", "abbr": "ANC", "primary": "#0F3470", "secondary": "#8FE3FF", "accent": "#FFFFFF", "helmet": "#F4F8FB", "logo": "a ship's prow smashing through jagged ice" },
+    { "id": "hellhounds",  "city": "Memphis",   "name": "Hellhounds",  "abbr": "MEM", "primary": "#B01228", "secondary": "#26262B", "accent": "#FF8A1F", "helmet": "#26262B", "logo": "a snarling hound head with a mane of flame" },
+    { "id": "twisters",    "city": "Omaha",     "name": "Twisters",    "abbr": "OMA", "primary": "#F2B90F", "secondary": "#2E3440", "accent": "#FFFFFF", "helmet": "#2E3440", "logo": "a tornado funnel" },
+    { "id": "amps",        "city": "Austin",    "name": "Amps",        "abbr": "ATX", "primary": "#E6007E", "secondary": "#15151A", "accent": "#19E6FF", "helmet": "#15151A", "logo": "a lightning bolt inside a guitar pick" },
+    { "id": "scorpions",   "city": "Tucson",    "name": "Scorpions",   "abbr": "TUC", "primary": "#12A594", "secondary": "#EBCB8B", "accent": "#1B1B1F", "helmet": "#EBCB8B", "logo": "a curled scorpion tail with a sharp stinger" },
+    { "id": "gargoyles",   "city": "Brooklyn",  "name": "Gargoyles",   "abbr": "BKN", "primary": "#6C3BD1", "secondary": "#9AA1AB", "accent": "#F2F2F2", "helmet": "#9AA1AB", "logo": "a horned gargoyle face with spread bat wings" }
+  ]
+}

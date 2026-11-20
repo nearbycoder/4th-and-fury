@@ -1,0 +1,460 @@
+{
+  "builds": {
+    "lean": {
+      "mesh": "SK_Player_Lean",
+      "fbx": "export/characters/SK_Player_Lean.fbx",
+      "blend": "blend/player_lean.blend",
+      "triangles": 44458,
+      "vertices": 23297,
+      "material_slots": [
+        "Helmet",
+        "HelmetStripe",
+        "HelmetLogo",
+        "Facemask",
+        "Visor",
+        "Strap",
+        "Skin",
+        "Eyes",
+        "Jersey",
+        "JerseyTrim",
+        "Pants",
+        "PantsStripe",
+        "Belt",
+        "Socks",
+        "Shoes",
+        "ShoeSole",
+        "Gloves",
+        "Bands"
+      ],
+      "triangles_by_slot": {
+        "Helmet": 8004,
+        "HelmetStripe": 152,
+        "HelmetLogo": 400,
+        "Facemask": 2424,
+        "Visor": 1552,
+        "Strap": 960,
+        "Skin": 6596,
+        "Eyes": 592,
+        "Jersey": 6748,
+        "JerseyTrim": 1208,
+        "Pants": 3296,
+        "PantsStripe": 224,
+        "Belt": 1602,
+        "Socks": 960,
+        "Shoes": 3020,
+        "ShoeSole": 1128,
+        "Gloves": 4824,
+        "Bands": 768
+      },
+      "max_bone_influences": 4,
+      "bounds_min_m": [
+        -0.6982,
+        -0.2296,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.6982,
+        0.1845,
+        1.9156
+      ],
+      "uv_atlas_metres": 2.4185,
+      "number_panels": {
+        "front": {
+          "center": [
+            0.0,
+            0.0,
+            1.368
+          ],
+          "u_axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.24,
+          "height_m": 0.24
+        },
+        "back": {
+          "center": [
+            0.0,
+            0.0,
+            1.372
+          ],
+          "u_axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.3,
+          "height_m": 0.3
+        },
+        "cap_l": {
+          "center": [
+            0.3229,
+            0.0,
+            1.456
+          ],
+          "u_axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v_axis": [
+            -0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        },
+        "cap_r": {
+          "center": [
+            -0.3229,
+            0.0,
+            1.456
+          ],
+          "u_axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "v_axis": [
+            0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        }
+      },
+      "helmet_logo": {
+        "centre_left": [
+          0.1371,
+          0.0171,
+          1.8001
+        ],
+        "size": 0.11
+      }
+    },
+    "mid": {
+      "mesh": "SK_Player_Mid",
+      "fbx": "export/characters/SK_Player_Mid.fbx",
+      "blend": "blend/player_mid.blend",
+      "triangles": 44866,
+      "vertices": 23505,
+      "material_slots": [
+        "Helmet",
+        "HelmetStripe",
+        "HelmetLogo",
+        "Facemask",
+        "Visor",
+        "Strap",
+        "Skin",
+        "Eyes",
+        "Jersey",
+        "JerseyTrim",
+        "Pants",
+        "PantsStripe",
+        "Belt",
+        "Socks",
+        "Shoes",
+        "ShoeSole",
+        "Gloves",
+        "Bands"
+      ],
+      "triangles_by_slot": {
+        "Helmet": 8004,
+        "HelmetStripe": 152,
+        "HelmetLogo": 400,
+        "Facemask": 2712,
+        "Visor": 1552,
+        "Strap": 960,
+        "Skin": 6692,
+        "Eyes": 592,
+        "Jersey": 6756,
+        "JerseyTrim": 1192,
+        "Pants": 3296,
+        "PantsStripe": 224,
+        "Belt": 1602,
+        "Socks": 960,
+        "Shoes": 3020,
+        "ShoeSole": 1128,
+        "Gloves": 4856,
+        "Bands": 768
+      },
+      "max_bone_influences": 4,
+      "bounds_min_m": [
+        -0.6994,
+        -0.2296,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.6994,
+        0.1845,
+        1.9156
+      ],
+      "uv_atlas_metres": 2.5634,
+      "number_panels": {
+        "front": {
+          "center": [
+            0.0,
+            0.0,
+            1.368
+          ],
+          "u_axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.24,
+          "height_m": 0.24
+        },
+        "back": {
+          "center": [
+            0.0,
+            0.0,
+            1.372
+          ],
+          "u_axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.3,
+          "height_m": 0.3
+        },
+        "cap_l": {
+          "center": [
+            0.3371,
+            0.0,
+            1.4504
+          ],
+          "u_axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v_axis": [
+            -0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        },
+        "cap_r": {
+          "center": [
+            -0.3371,
+            0.0,
+            1.4504
+          ],
+          "u_axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "v_axis": [
+            0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        }
+      },
+      "helmet_logo": {
+        "centre_left": [
+          0.1371,
+          0.0171,
+          1.8001
+        ],
+        "size": 0.11
+      }
+    },
+    "big": {
+      "mesh": "SK_Player_Big",
+      "fbx": "export/characters/SK_Player_Big.fbx",
+      "blend": "blend/player_big.blend",
+      "triangles": 45822,
+      "vertices": 23985,
+      "material_slots": [
+        "Helmet",
+        "HelmetStripe",
+        "HelmetLogo",
+        "Facemask",
+        "Visor",
+        "Strap",
+        "Skin",
+        "Eyes",
+        "Jersey",
+        "JerseyTrim",
+        "Pants",
+        "PantsStripe",
+        "Belt",
+        "Socks",
+        "Shoes",
+        "ShoeSole",
+        "Gloves",
+        "Bands"
+      ],
+      "triangles_by_slot": {
+        "Helmet": 8004,
+        "HelmetStripe": 152,
+        "HelmetLogo": 400,
+        "Facemask": 3400,
+        "Visor": 1552,
+        "Strap": 960,
+        "Skin": 6504,
+        "Eyes": 592,
+        "Jersey": 7212,
+        "JerseyTrim": 1112,
+        "Pants": 3176,
+        "PantsStripe": 216,
+        "Belt": 1602,
+        "Socks": 960,
+        "Shoes": 3020,
+        "ShoeSole": 1128,
+        "Gloves": 5064,
+        "Bands": 768
+      },
+      "max_bone_influences": 3,
+      "bounds_min_m": [
+        -0.7017,
+        -0.2296,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.7017,
+        0.1845,
+        1.9156
+      ],
+      "uv_atlas_metres": 2.6965,
+      "number_panels": {
+        "front": {
+          "center": [
+            0.0,
+            0.0,
+            1.368
+          ],
+          "u_axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.24,
+          "height_m": 0.24
+        },
+        "back": {
+          "center": [
+            0.0,
+            0.0,
+            1.372
+          ],
+          "u_axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "v_axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width_m": 0.3,
+          "height_m": 0.3
+        },
+        "cap_l": {
+          "center": [
+            0.3665,
+            0.0,
+            1.4345
+          ],
+          "u_axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "v_axis": [
+            -0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        },
+        "cap_r": {
+          "center": [
+            -0.3665,
+            0.0,
+            1.4345
+          ],
+          "u_axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "v_axis": [
+            0.7071,
+            0.0,
+            0.7071
+          ],
+          "width_m": 0.1,
+          "height_m": 0.1
+        }
+      },
+      "helmet_logo": {
+        "centre_left": [
+          0.1371,
+          0.0171,
+          1.8001
+        ],
+        "size": 0.11
+      }
+    }
+  },
+  "units": "metres in Blender; the FBX is exported with furylib.export.export_skeletal_mesh",
+  "skeleton": "furylib.rig (unchanged); armature object 'Armature'; rest pose only, no animation",
+  "orientation": "Z up, character faces -Y, left side is +X",
+  "uv_maps": {
+    "UVMap": "atlas of every part at one texel density; 1 UV unit = uv_atlas_metres metres. HelmetLogo faces are the exception: each patch fills 0..1 (U toward the facemask, V up).",
+    "NumberUV": "jersey number squares (front, back, top of each shoulder cap) map to 0..1; faces outside a panel fall outside 0..1; faces on no panel are (-1,-1)."
+  },
+  "slot_notes": {
+    "Helmet": "shell, rim, inner liner, jaw pads, front and back bumpers",
+    "HelmetStripe": "3.5 cm centre stripe, part of the shell surface",
+    "HelmetLogo": "two 11 x 11 cm decal patches 1.7 mm off the shell; wants an alpha-masked emblem",
+    "Facemask": "cage bars and the clips that hold them",
+    "Strap": "chin cup, four chin straps and their snaps",
+    "Eyes": "eyes and brows",
+    "JerseyTrim": "collar band, sleeve cuffs and the under-arm side panels",
+    "Belt": "belt, buckle, the laces of the fly and the towel",
+    "Bands": "wristbands and bicep bands"
+  },
+  "rigid_parts": "helmet, facemask, visor, chin strap, eyes: 100% head. Cleats: foot/ball only.",
+  "scale_note": "helmet (and the head in it) is 7% larger than life-size gear, gloves 10%, cleats 6%",
+  "pose_note": "fingers_* / thumb_*: -Z on the left, +Z on the right curls toward the palm"
+}

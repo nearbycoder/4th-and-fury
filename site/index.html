@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4th &amp; Fury: seven-a-side arcade football</title>
+<meta name="description" content="Seven-a-side arcade football for one to eight people on one screen. Four downs to gain thirty yards, a Fury meter, and three seconds after the whistle. Play it in your browser.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="canonical" href="https://nearbycoder.github.io/4th-and-fury/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="4th &amp; Fury">
+<meta property="og:title" content="4th &amp; Fury: seven-a-side arcade football">
+<meta property="og:description" content="One to eight players on one screen. Four downs for 30 yards. Three seconds after the whistle. Play it in your browser.">
+<meta property="og:url" content="https://nearbycoder.github.io/4th-and-fury/">
+<meta property="og:image" content="https://nearbycoder.github.io/4th-and-fury/media/og.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="4th &amp; Fury key art: a Memphis running back fends off a diving Tucson linebacker.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="4th &amp; Fury: seven-a-side arcade football">
+<meta name="twitter:description" content="One to eight players on one screen. Four downs for 30 yards. Three seconds after the whistle.">
+<meta name="twitter:image" content="https://nearbycoder.github.io/4th-and-fury/media/og.webp">
+<meta name="twitter:image:alt" content="4th &amp; Fury key art: a Memphis running back fends off a diving Tucson linebacker.">
+
+<link rel="preload" href="fonts/BarlowCondensed-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/BarlowCondensed-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="media/title.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="top">
+  <div class="topbar__inner">
+    <a class="brand" href="#top" aria-label="4th &amp; Fury, back to top">
+      <img src="media/title.webp" alt="" width="960" height="515">
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <ul>
+        <li><a href="#trailer">Trailer</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#screens">Screens</a></li>
+        <li><a href="#controls">Controls</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--play btn--sm" href="./play/"><span class="glyph glyph--a" aria-hidden="true">A</span>Play</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <picture class="hero__bg">
+    <source media="(max-width: 760px)" srcset="media/hero-m.webp" width="900" height="706">
+    <img src="media/hero.webp" alt="A Memphis Hellhounds running back, number 29, stiff-arms a diving Tucson Scorpions linebacker under the stadium lights." width="1920" height="1080" fetchpriority="high">
+  </picture>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <h1 id="hero-title" class="hero__logo">
+      <img src="media/title.webp" alt="4th &amp; Fury" width="960" height="515">
+    </h1>
+    <p class="strap"><span>Four downs for 30 yards</span><span class="strap__sep" aria-hidden="true">/</span><span>Three seconds after the whistle</span></p>
+    <p class="hero__pitch">Seven-a-side arcade football for one to eight people on a single screen. No penalties, late hits allowed, and a Fury meter that sets a whole team on fire.</p>
+    <div class="hero__ctas">
+      <a class="btn btn--play btn--xl" href="./play/"><span class="glyph glyph--a" aria-hidden="true">A</span>Play in your browser</a>
+      <a class="btn btn--ghost btn--xl" href="#trailer" data-play-trailer><span class="tri" aria-hidden="true"></span>Watch the trailer</a>
+    </div>
+    <p class="hero__note"><span class="dot" aria-hidden="true"></span>Runs in desktop browsers. Play with the keyboard (two players can share one) or plug in gamepads.</p>
+  </div>
+</section>
+
+<!-- SCOREBUG STRIP -->
+<section class="bug" aria-label="The game in numbers">
+  <ul class="bug__list">
+    <li><b>7</b><span>on 7</span></li>
+    <li><b>4</b><span>downs</span></li>
+    <li class="bug__hot"><b>30</b><span>yards for a first</span></li>
+    <li><b>3</b><span>seconds after the whistle</span></li>
+    <li><b>8</b><span>players, one screen</span></li>
+  </ul>
+</section>
+
+<!-- TRAILER -->
+<section class="section" id="trailer" aria-labelledby="trailer-h">
+  <div class="wrap">
+    <header class="head">
+      <p class="kicker">Gameplay trailer &middot; 0:35</p>
+      <h2 id="trailer-h" class="banner banner--red">See it move</h2>
+    </header>
+    <div class="screen">
+      <video id="trailer-video" controls preload="none" playsinline poster="media/trailer-poster.webp" width="1280" height="720">
+        <source src="media/trailer.mp4" type="video/mp4">
+        <track kind="captions" src="media/trailer.en.vtt" srclang="en" label="English">
+        <track kind="captions" src="media/trailer.pt-BR.vtt" srclang="pt-BR" label="Português (Brasil)">
+        <p>Your browser can't play this video. <a href="media/trailer.mp4">Download the trailer (MP4)</a>.</p>
+      </video>
+    </div>
+    <p class="caption">A touchdown, the late hits that follow and Play Film. Captions in English and Brazilian Portuguese.</p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section section--field" id="features" aria-labelledby="features-h">
+  <div class="wrap">
+    <header class="head">
+      <p class="kicker">How it plays</p>
+      <h2 id="features-h" class="banner banner--blaze">Built for a crowded couch</h2>
+    </header>
+
+    <article class="spot">
+      <div class="spot__media screen">
+        <video controls preload="none" playsinline poster="media/after-the-whistle-poster.webp" width="1280" height="720" aria-label="A kick return, then the full three-second late-hit window">
+          <source src="media/after-the-whistle.mp4" type="video/mp4">
+          <p><a href="media/after-the-whistle.mp4">Download the clip (MP4)</a></p>
+        </video>
+      </div>
+      <div class="spot__text">
+        <p class="tag">Late hits <span class="tag__n">03</span></p>
+        <h3>Three seconds after the whistle</h3>
+        <p>The ref spots the ball. You have three seconds to get back up and return the favor. Both teams can move and hit. The clock, score and ball spot are already settled.</p>
+        <ul class="prompts">
+          <li><span class="glyph glyph--b" aria-hidden="true">B</span>Shove <span class="muted">(hold Turbo for a shoulder hit)</span></li>
+          <li><span class="glyph glyph--x" aria-hidden="true">X</span>Dive at a standing opponent or drop an elbow on a downed one</li>
+          <li><span class="glyph glyph--a" aria-hidden="true">A</span>Vote for the next play. If everyone presses it, play calling starts early.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="spot spot--flip">
+      <div class="spot__media screen">
+        <button class="zoom" type="button" data-shot="fury" aria-label="Enlarge: Portland in Fury">
+          <img src="media/shots/fury-sm.webp" alt="Portland Sasquatch players trail sparks across the field while in Fury, late in the fourth quarter against Honolulu." width="720" height="450" loading="lazy" decoding="async">
+        </button>
+      </div>
+      <div class="spot__text">
+        <p class="tag tag--fury">Fury</p>
+        <h3>Fill the meter. Catch fire.</h3>
+        <p>Big defensive stops and explosive gains fill a team's Fury meter. When it's full, the whole team catches fire for three plays: faster, endless turbo, and every tackle is a big hit.</p>
+        <div class="meter" role="img" aria-label="A full Fury meter">
+          <span class="meter__fill"></span>
+        </div>
+      </div>
+    </article>
+
+    <article class="spot">
+      <div class="spot__media screen">
+        <button class="zoom" type="button" data-shot="lobby" aria-label="Enlarge: the eight-seat lobby">
+          <img src="media/shots/lobby-sm.webp" alt="The Pick a Side lobby with eight seats: two keyboard halves and six pads, waiting to choose home or away." width="720" height="405" loading="lazy" decoding="async">
+        </button>
+      </div>
+      <div class="spot__text">
+        <p class="tag tag--blue">1&ndash;8 players</p>
+        <h3>Eight seats, one screen</h3>
+        <p>Up to four people per team, in any mix of gamepads and the two halves of one keyboard. Everyone presses A to take a seat, steps left or right to pick a side, and presses A again when ready. The computer runs any spot nobody takes. Teammates rotate play-calling duties each drive.</p>
+        <p class="muted">Playing alone? Quick Solo puts you in one-minute quarters against a Rookie opponent. Computer skill goes up to Pro and All-Fury.</p>
+      </div>
+    </article>
+
+    <div class="cards">
+      <article class="card">
+        <p class="card__num" aria-hidden="true">7</p>
+        <h3>Seven on seven</h3>
+        <p>A 100-yard field, seven a side, no penalties. Four quarters of 1:00, 1:30, 2:00 or 3:00, and the clock only runs while the ball is live.</p>
+      </article>
+      <article class="card">
+        <p class="card__num" aria-hidden="true">30</p>
+        <h3>Thirty yards for a first down</h3>
+        <p>Four downs to make 30. Touchdown is 6, then kick the extra point or go for two from the 3. Field goal 3, safety 2. Ties go to sudden death.</p>
+      </article>
+      <article class="card">
+        <button class="zoom card__shot" type="button" data-shot="playcall" aria-label="Enlarge: the playbook">
+          <img src="media/shots/playcall-sm.webp" alt="Play calling: Memphis picks a defense and Tucson an offense from diagrammed plays." width="720" height="405" loading="lazy" decoding="async">
+        </button>
+        <h3>A diagrammed playbook</h3>
+        <p>Pass, run &amp; trick, and kick pages. Flip any play. Against a computer defense, hold LB before the snap to see your routes on the turf.</p>
+      </article>
+      <article class="card">
+        <button class="zoom card__shot" type="button" data-shot="play-film" aria-label="Enlarge: Play Film">
+          <img src="media/shots/play-film-sm.webp" alt="Play Film: a top-down replay of a kick return with numbered jerseys and a timeline." width="720" height="405" loading="lazy" decoding="async">
+        </button>
+        <h3>Play Film</h3>
+        <p>Replay all fourteen jerseys and the football from the last snap, right through the final late hit. Scrub the timeline. At the final score, replay the longest touchdown.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="kickoff" aria-labelledby="kickoff-h">
+  <div class="wrap kickoff__inner">
+    <div>
+      <h2 id="kickoff-h" class="kickoff__title">Grab a friend. Split the keyboard.</h2>
+      <p>One of you on W A S D, the other on the arrow keys. Plug in more pads for up to eight.</p>
+    </div>
+    <a class="btn btn--play btn--xl" href="./play/"><span class="glyph glyph--a" aria-hidden="true">A</span>Play in your browser</a>
+  </div>
+</section>
+
+<!-- TEAMS -->
+<section class="section" id="teams" aria-labelledby="teams-h">
+  <div class="wrap">
+    <header class="head">
+      <p class="kicker">The Fury Football League</p>
+      <h2 id="teams-h" class="banner banner--red">Eight teams</h2>
+      <p class="lede">Each has its own colours, emblem, end zones, roster and ratings.</p>
+    </header>
+    <ul class="teams">
+      <li class="team" style="--t1:#1F6B3A;--t2:#EFE6CC;--t3:#6B4423;--tb:#1F6B3A;--ti:#fff">
+        <img class="team__logo" src="media/teams/sasquatch.webp" alt="Sasquatch emblem: a huge bare footprint" width="272" height="320" loading="lazy" decoding="async">
+        <p class="team__city">Portland <span>POR</span></p>
+        <h3 class="team__name">Sasquatch</h3>
+        <p class="team__motto">&ldquo;Big. Hairy. Impossible to tackle.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="2"><span>2 of 5</span></dd></div><div><dt>Power</dt><dd data-r="5"><span>5 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="4"><span>4 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#1A1A1E;--t2:#FF5A1F;--t3:#FFC21A;--tb:#FF5A1F;--ti:#14100e">
+        <img class="team__logo" src="media/teams/volcanoes.webp" alt="Volcanoes emblem: an erupting volcano" width="320" height="300" loading="lazy" decoding="async">
+        <p class="team__city">Honolulu <span>HNL</span></p>
+        <h3 class="team__name">Volcanoes</h3>
+        <p class="team__motto">&ldquo;Every drive ends in an eruption.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Power</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="5"><span>5 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="2"><span>2 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#0F3470;--t2:#8FE3FF;--t3:#FFFFFF;--tb:#0F3470;--ti:#fff">
+        <img class="team__logo" src="media/teams/icebreakers.webp" alt="Icebreakers emblem: a ship's prow smashing through ice" width="320" height="287" loading="lazy" decoding="async">
+        <p class="team__city">Anchorage <span>ANC</span></p>
+        <h3 class="team__name">Icebreakers</h3>
+        <p class="team__motto">&ldquo;Nothing gets through the ice.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Power</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="2"><span>2 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="5"><span>5 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#B01228;--t2:#26262B;--t3:#FF8A1F;--tb:#B01228;--ti:#fff">
+        <img class="team__logo" src="media/teams/hellhounds.webp" alt="Hellhounds emblem: a snarling hound head with a mane of flame" width="320" height="314" loading="lazy" decoding="async">
+        <p class="team__city">Memphis <span>MEM</span></p>
+        <h3 class="team__name">Hellhounds</h3>
+        <p class="team__motto">&ldquo;Off the leash since kickoff.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Power</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="3"><span>3 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#F2B90F;--t2:#2E3440;--t3:#FFFFFF;--tb:#F2B90F;--ti:#1c2028">
+        <img class="team__logo" src="media/teams/twisters.webp" alt="Twisters emblem: a tornado funnel" width="291" height="320" loading="lazy" decoding="async">
+        <p class="team__city">Omaha <span>OMA</span></p>
+        <h3 class="team__name">Twisters</h3>
+        <p class="team__motto">&ldquo;You will not see them coming.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="5"><span>5 of 5</span></dd></div><div><dt>Power</dt><dd data-r="2"><span>2 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="3"><span>3 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#E6007E;--t2:#15151A;--t3:#19E6FF;--tb:#E6007E;--ti:#fff">
+        <img class="team__logo" src="media/teams/amps.webp" alt="Amps emblem: a lightning bolt inside a guitar pick" width="251" height="320" loading="lazy" decoding="async">
+        <p class="team__city">Austin <span>ATX</span></p>
+        <h3 class="team__name">Amps</h3>
+        <p class="team__motto">&ldquo;Turned all the way up.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Power</dt><dd data-r="2"><span>2 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="3"><span>3 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#12A594;--t2:#EBCB8B;--t3:#1B1B1F;--tb:#12A594;--ti:#08201d">
+        <img class="team__logo" src="media/teams/scorpions.webp" alt="Scorpions emblem: a curled scorpion tail with a stinger" width="320" height="307" loading="lazy" decoding="async">
+        <p class="team__city">Tucson <span>TUC</span></p>
+        <h3 class="team__name">Scorpions</h3>
+        <p class="team__motto">&ldquo;Quiet in the sand. Then the sting.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Power</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="4"><span>4 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+      <li class="team" style="--t1:#6C3BD1;--t2:#9AA1AB;--t3:#F2F2F2;--tb:#6C3BD1;--ti:#fff">
+        <img class="team__logo" src="media/teams/gargoyles.webp" alt="Gargoyles emblem: a horned gargoyle face with spread bat wings" width="320" height="255" loading="lazy" decoding="async">
+        <p class="team__city">Brooklyn <span>BKN</span></p>
+        <h3 class="team__name">Gargoyles</h3>
+        <p class="team__motto">&ldquo;Stone cold. Always watching.&rdquo;</p>
+        <dl class="ratings"><div><dt>Speed</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Power</dt><dd data-r="4"><span>4 of 5</span></dd></div><div><dt>Passing</dt><dd data-r="3"><span>3 of 5</span></dd></div><div><dt>Defense</dt><dd data-r="4"><span>4 of 5</span></dd></div></dl>
+        <p class="swatches" aria-hidden="true"><i></i><i></i><i></i></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- SCREENS -->
+<section class="section section--dark" id="screens" aria-labelledby="screens-h">
+  <div class="wrap">
+    <header class="head">
+      <p class="kicker">Screenshots</p>
+      <h2 id="screens-h" class="banner banner--blue">From kickoff to the final whistle</h2>
+    </header>
+    <ul class="gallery" id="gallery">
+      <li><a href="media/shots/touchdown.webp" data-shot="touchdown"><img src="media/shots/touchdown-sm.webp" alt="Touchdown Memphis: number 29 Tallchief on a 25-yard reception, with the late-hit window open." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/teams.webp" data-shot="teams"><img src="media/shots/teams-sm.webp" alt="Choose your teams: Memphis Hellhounds against Omaha Twisters, with speed, power, passing and defense ratings." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/lobby.webp" data-shot="lobby"><img src="media/shots/lobby-sm.webp" alt="Pick a side: eight seats for two keyboard halves and six pads." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/playcall.webp" data-shot="playcall"><img src="media/shots/playcall-sm.webp" alt="Both benches call plays at once: Memphis on defense, Tucson on offense." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/routes.webp" data-shot="routes"><img src="media/shots/routes-sm.webp" alt="Portland at its own 5, first and 30, with the selected routes drawn on the turf before the snap." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/after-whistle.webp" data-shot="after-whistle"><img src="media/shots/after-whistle-sm.webp" alt="After a 22-yard kick return, players from both teams lie piled on the turf during the late hits." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/fury.webp" data-shot="fury"><img src="media/shots/fury-sm.webp" alt="Portland in Fury, trailing sparks, down 28 to 26 against Honolulu with 18 seconds left." width="720" height="450" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/play-film.webp" data-shot="play-film"><img src="media/shots/play-film-sm.webp" alt="Play Film: a top-down replay of a kick return with numbered jerseys and a scrubbable timeline." width="720" height="405" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/final.webp" data-shot="final"><img src="media/shots/final-sm.webp" alt="Volcanoes win, 27 to 12, with the box score and an option to replay the longest touchdown." width="720" height="450" loading="lazy" decoding="async"></a></li>
+      <li><a href="media/shots/title.webp" data-shot="title"><img src="media/shots/title-sm.webp" alt="The title screen: Set Up Match or Quick Solo." width="720" height="405" loading="lazy" decoding="async"></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTROLS -->
+<section class="section section--field" id="controls" aria-labelledby="controls-h">
+  <div class="wrap">
+    <header class="head">
+      <p class="kicker">Controls</p>
+      <h2 id="controls-h" class="banner banner--blaze">Two on one keyboard, or bring pads</h2>
+      <p class="lede">Any mix of gamepads and the two keyboard halves works. Keyboard players see their own keys on screen.</p>
+    </header>
+
+    <div class="tables">
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="keys-cap">
+        <table class="keys">
+          <caption id="keys-cap">Buttons</caption>
+          <thead>
+            <tr><th scope="col"><span class="sr">Action</span></th><th scope="col">Keyboard 1</th><th scope="col">Keyboard 2</th><th scope="col">Gamepad</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Move</th><td><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd></td><td><kbd>&uarr;</kbd> <kbd>&larr;</kbd> <kbd>&darr;</kbd> <kbd>&rarr;</kbd></td><td>Left stick / D-pad</td></tr>
+            <tr><th scope="row">Turbo (hold)</th><td><kbd>Left Shift</kbd></td><td><kbd>Right Shift</kbd></td><td>Either trigger</td></tr>
+            <tr><th scope="row"><span class="glyph glyph--a">A</span></th><td><kbd>G</kbd> or <kbd>Space</kbd></td><td><kbd>K</kbd></td><td>Bottom button</td></tr>
+            <tr><th scope="row"><span class="glyph glyph--b">B</span></th><td><kbd>H</kbd></td><td><kbd>L</kbd></td><td>Right button</td></tr>
+            <tr><th scope="row"><span class="glyph glyph--x">X</span></th><td><kbd>F</kbd></td><td><kbd>J</kbd></td><td>Left button</td></tr>
+            <tr><th scope="row"><span class="glyph glyph--y">Y</span></th><td><kbd>T</kbd></td><td><kbd>I</kbd></td><td>Top button</td></tr>
+            <tr><th scope="row">LB / RB</th><td><kbd>Q</kbd> / <kbd>E</kbd></td><td><kbd>U</kbd> / <kbd>O</kbd></td><td>Shoulders</td></tr>
+            <tr><th scope="row">Pause</th><td><kbd>Esc</kbd></td><td><kbd>Enter</kbd></td><td>Start</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="ctx-cap">
+        <table class="ctx">
+          <caption id="ctx-cap">What the buttons do</caption>
+          <thead>
+            <tr><th scope="col">When</th><th scope="col"><span class="glyph glyph--a">A</span><span class="sr"> button</span></th><th scope="col"><span class="glyph glyph--b">B</span><span class="sr"> button</span></th><th scope="col"><span class="glyph glyph--x">X</span><span class="sr"> button</span></th><th scope="col"><span class="glyph glyph--y">Y</span><span class="sr"> button</span></th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Calling a play</th><td data-b="A">Call it</td><td data-b="B" class="empty"></td><td data-b="X">Flip the play</td><td data-b="Y" class="empty"></td></tr>
+            <tr><th scope="row">Before the snap</th><td data-b="A">Hike</td><td data-b="B" class="empty"></td><td data-b="X" class="empty"></td><td data-b="Y" class="empty"></td></tr>
+            <tr><th scope="row">Quarterback</th><td data-b="A">Throw to the bottom receiver</td><td data-b="B">Throw to the middle receiver</td><td data-b="X">Throw to the middle receiver</td><td data-b="Y">Throw to the top receiver</td></tr>
+            <tr><th scope="row">Ball carrier</th><td data-b="A">Spin</td><td data-b="B">Stiff-arm</td><td data-b="X">Dive</td><td data-b="Y">Hurdle</td></tr>
+            <tr><th scope="row">Receiver</th><td data-b="A">Call for the ball</td><td data-b="B">Shove</td><td data-b="X">Jump for the pass</td><td data-b="Y">Jump for the pass</td></tr>
+            <tr><th scope="row">Defender</th><td data-b="A">Switch to the player nearest the ball</td><td data-b="B">Big hit</td><td data-b="X">Diving tackle</td><td data-b="Y">Swat / jump</td></tr>
+            <tr><th scope="row">Kicking</th><td data-b="A">Stop the meter in the green</td><td data-b="B" class="empty"></td><td data-b="X" class="empty"></td><td data-b="Y" class="empty"></td></tr>
+            <tr><th scope="row">After the whistle</th><td data-b="A">Vote for the next play</td><td data-b="B">Shove (hold Turbo for a shoulder hit)</td><td data-b="X">Dive, or drop an elbow</td><td data-b="Y" class="empty"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <ul class="tips">
+      <li>Receivers show the button that throws to them above their heads.</li>
+      <li>A gold ring narrows toward the catch point on a pass, punt or kickoff.</li>
+      <li>LB / RB turn the playbook page: pass, run &amp; trick, kick.</li>
+      <li>Leave the stick alone on offense or in coverage and your athlete runs his assignment.</li>
+    </ul>
+    <p class="note"><strong>In the browser:</strong> the web version runs in desktop browsers with a keyboard or gamepads. Browsers only report a gamepad after you press one of its buttons, so press any button on each pad once the game has loaded.</p>
+  </div>
+</section>
+
+<!-- BUILT WITH -->
+<section class="section" id="built" aria-labelledby="built-h">
+  <div class="wrap built">
+    <div class="built__text">
+      <header class="head head--left">
+        <p class="kicker">How it was made</p>
+        <h2 id="built-h" class="banner banner--teal">Built from scratch</h2>
+      </header>
+      <p>4th &amp; Fury is an original game in the spirit of the 90s arcade football cabinets: its own name, teams, art, sound and playbook.</p>
+      <ul class="stack">
+        <li><b>Unreal Engine 5</b> runs the original game, in C++ with no Blueprints. The rules live in a plain C++ simulation.</li>
+        <li><b>Blender</b> builds the athletes by script, in three builds, with 52 animations, plus the stadium and crowd.</li>
+        <li><b>Python</b> draws the team emblems, field and interface art, and synthesizes every sound effect, the crowd and the music.</li>
+        <li><b>Three.js</b> powers the browser version, a port of the game for the web.</li>
+      </ul>
+      <p><a class="link" href="https://github.com/nearbycoder/4th-and-fury">Source on GitHub<span aria-hidden="true"> &rarr;</span></a></p>
+    </div>
+    <figure class="built__fig screen">
+      <img src="media/shots/athletes-sm.webp" srcset="media/shots/athletes-sm.webp 720w, media/shots/athletes.webp 1600w" sizes="(max-width: 860px) 100vw, 46vw" alt="Lean, mid and big athlete builds in Icebreakers, Sasquatch and Hellhounds uniforms, rendered in Blender." width="720" height="463" loading="lazy" decoding="async">
+      <figcaption>The three athlete builds, rendered in Blender.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" aria-labelledby="final-h">
+  <div class="wrap final__inner">
+    <p class="final__down" aria-hidden="true">4th <span>&amp;</span> 30</p>
+    <h2 id="final-h" class="final__title">Your ball. Your call.</h2>
+    <p>Quick Solo is one button away. For a shared match, everyone presses A on their own keys or pad.</p>
+    <a class="btn btn--play btn--xl" href="./play/"><span class="glyph glyph--a" aria-hidden="true">A</span>Play in your browser</a>
+    <p class="hero__note hero__note--center"><span class="dot" aria-hidden="true"></span>Desktop browser with a keyboard or gamepad.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img class="footer__logo" src="media/title.webp" alt="" width="960" height="515" loading="lazy" decoding="async">
+    <ul class="footer__links">
+      <li><a href="./play/">Play</a></li>
+      <li><a href="https://github.com/nearbycoder/4th-and-fury">GitHub</a></li>
+      <li><a href="media/trailer.mp4">Trailer (MP4)</a></li>
+      <li><a href="fonts/OFL-BarlowCondensed.txt">Font licence</a></li>
+    </ul>
+    <p class="footer__fine">Teams, emblems, uniforms, stadium, animation and playbook are original to this project. Set in Barlow Condensed (SIL Open Font License). The announcer and field calls use performances synthesized with Qwen3-TTS. Created in <a href="https://t3.codes">T3 Code</a>.</p>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+  <figure class="lightbox__fig">
+    <img id="lightbox-img" src="data:," alt="" width="1600" height="900">
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+  <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Close">&times;</button>
+  <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Previous screenshot">&lsaquo;</button>
+  <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Next screenshot">&rsaquo;</button>
+</dialog>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

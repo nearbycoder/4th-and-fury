@@ -1,0 +1,51 @@
+4TH & FURY
+Mac play guide • Version 0.9.0
+
+Open FourthAndFury.app on an Apple Silicon Mac. The game runs offline.
+
+YOUR FIRST DRIVE
+
+Press X on a controller, F on the left keyboard or J on the right keyboard
+for Quick Solo. You get one-minute quarters against a Rookie opponent.
+The team on the left of the score display attacks to the right when it
+has the ball. The team on the right attacks to the left.
+
+Pick a diagram in the playbook and confirm with A. Against the computer,
+hold the left shoulder before the snap to see your routes on the turf.
+Press A to snap. At quarterback, press the button floating above the
+receiver you want. The catch-point ring shows where the ball will land.
+On a run, hold a trigger to sprint. Gain thirty yards in four downs to
+earn a fresh set.
+
+BRING ANOTHER PLAYER
+
+Choose Set Up Match from the title screen. Each player presses A on their
+own input, picks a side and presses A again to ready up. Up to four seats
+can join each side. Pick the teams and lock them in. Face-button prompts match each controller.
+The computer fills the rest of each lineup. Teammates take turns calling the next drive.
+
+AFTER THE WHISTLE
+
+You have three seconds. B shoves, Turbo + B lands a shoulder hit and X
+dives or drops an elbow. Every player can press A to advance early.
+Pause after a play and press Y to watch Play Film. The timeline marks the
+whistle. Move left or right to scrub through the late hits. At the final
+score, Y replays the longest touchdown of the match.
+
+SHARED KEYBOARD
+
+                          Left half                 Right half
+Move                      W A S D                   Arrow keys
+Confirm / A               G or Space                K
+Back / B                  H                         L
+X                         F                         J
+Y                         T                         I
+Shoulders                 Q / E                     U / O
+Turbo                     Left Shift                Right Shift
+Pause                     Escape                    Enter
+
+Press Start to pause. X opens the Field Guide. Settings has graphics and
+six sound channels. Turn on Announcer Captions in Sound to follow the
+commentary with the volume down. Balanced adjusts field resolution toward
+120 FPS or your lower frame cap. Reduced Motion steadies the camera and
+turns off impact shake and stadium flashes. Quit Game closes the app.

@@ -1,0 +1,622 @@
+{
+  "units": "metres, Blender coordinates (Z up). Unreal = (100*x, -100*y, 100*z) cm.",
+  "lights": [
+    {
+      "pos": [
+        -40.6628,
+        56.1179,
+        46.8466
+      ],
+      "aim": [
+        -17.0,
+        -5.0,
+        0.0
+      ]
+    },
+    {
+      "pos": [
+        40.6628,
+        56.1179,
+        46.8466
+      ],
+      "aim": [
+        17.0,
+        -5.0,
+        0.0
+      ]
+    },
+    {
+      "pos": [
+        -40.6659,
+        -66.8952,
+        36.994
+      ],
+      "aim": [
+        -17.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "pos": [
+        40.6659,
+        -66.8952,
+        36.994
+      ],
+      "aim": [
+        17.0,
+        5.0,
+        0.0
+      ]
+    },
+    {
+      "pos": [
+        -86.8251,
+        0.0,
+        46.8218
+      ],
+      "aim": [
+        -37.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pos": [
+        86.8251,
+        0.0,
+        46.8218
+      ],
+      "aim": [
+        37.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "screen": {
+    "center": [
+      0.0,
+      55.98,
+      28.9572
+    ],
+    "width": 33.0,
+    "height": 18.5625,
+    "normal": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  "small_screens": [
+    {
+      "center": [
+        85.66,
+        0.0,
+        17.626
+      ],
+      "width": 24.0,
+      "height": 6.0,
+      "normal": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "center": [
+        -85.66,
+        0.0,
+        17.626
+      ],
+      "width": 24.0,
+      "height": 6.0,
+      "normal": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "tunnel": {
+    "mouth": [
+      -50.9167,
+      33.8,
+      0.0
+    ],
+    "dir": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "clear_width": 6.4,
+    "portal": [
+      -50.9167,
+      42.0,
+      0.0
+    ],
+    "portal_width": 5.6,
+    "portal_height": 3.8
+  },
+  "benches": {
+    "home": {
+      "side": "+Y",
+      "area_center": [
+        0.0,
+        30.2,
+        0.0
+      ],
+      "area_size": [
+        33.0,
+        3.0
+      ],
+      "yaw": 0.0,
+      "benches": [
+        {
+          "pos": [
+            -13.5,
+            30.2,
+            0
+          ],
+          "yaw": 0.0
+        },
+        {
+          "pos": [
+            -4.5,
+            30.2,
+            0
+          ],
+          "yaw": 0.0
+        },
+        {
+          "pos": [
+            4.5,
+            30.2,
+            0
+          ],
+          "yaw": 0.0
+        },
+        {
+          "pos": [
+            13.5,
+            30.2,
+            0
+          ],
+          "yaw": 0.0
+        }
+      ]
+    },
+    "away": {
+      "side": "-Y",
+      "area_center": [
+        0.0,
+        -30.2,
+        0.0
+      ],
+      "area_size": [
+        33.0,
+        3.0
+      ],
+      "yaw": 3.141593,
+      "benches": [
+        {
+          "pos": [
+            -13.5,
+            -30.2,
+            0
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "pos": [
+            -4.5,
+            -30.2,
+            0
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "pos": [
+            4.5,
+            -30.2,
+            0
+          ],
+          "yaw": 3.141592653589793
+        },
+        {
+          "pos": [
+            13.5,
+            -30.2,
+            0
+          ],
+          "yaw": 3.141592653589793
+        }
+      ]
+    },
+    "note": "yaw is radians about +Z in Blender; SM_Bench's sitting side faces -Y at yaw 0."
+  },
+  "bounds": {
+    "min": [
+      -133.5,
+      -102.8,
+      0.0
+    ],
+    "max": [
+      133.5,
+      102.8,
+      55.016
+    ],
+    "size": [
+      267.0,
+      205.6,
+      55.016
+    ]
+  },
+  "tris": {
+    "SM_Stadium.fbx": 173322,
+    "SM_Goalpost.fbx": 1000,
+    "SM_Football.fbx": 2920,
+    "SM_KickTee.fbx": 168,
+    "SM_Pylon.fbx": 44,
+    "SM_Bench.fbx": 408,
+    "SM_Cooler.fbx": 2146,
+    "SM_ChainPole.fbx": 408,
+    "SM_DownBox.fbx": 212,
+    "SM_Camera.fbx": 1262,
+    "SM_CrowdA.fbx": 178,
+    "SM_CrowdB.fbx": 138,
+    "SM_CrowdC.fbx": 138
+  },
+  "slots": {
+    "SM_Stadium": [
+      "Concrete",
+      "ConcreteDark",
+      "SeatA",
+      "SeatB",
+      "Steel",
+      "Glass",
+      "WallPad",
+      "AdBoard",
+      "Screen",
+      "ScreenSmall",
+      "Lamp",
+      "LampHousing",
+      "Apron",
+      "Roof"
+    ],
+    "SM_Goalpost": [
+      "GoalYellow",
+      "GoalPad"
+    ],
+    "SM_Football": [
+      "Leather",
+      "Laces",
+      "BallStripe"
+    ],
+    "SM_KickTee": [
+      "Tee"
+    ],
+    "SM_Pylon": [
+      "Pylon"
+    ],
+    "SM_Bench": [
+      "BenchSeat",
+      "Steel"
+    ],
+    "SM_Cooler": [
+      "CoolerBody",
+      "Steel"
+    ],
+    "SM_ChainPole": [
+      "MarkerOrange",
+      "Steel"
+    ],
+    "SM_DownBox": [
+      "MarkerOrange",
+      "Steel",
+      "DownFace"
+    ],
+    "SM_Camera": [
+      "CameraBody",
+      "Glass"
+    ],
+    "SM_CrowdA": [
+      "Crowd"
+    ],
+    "SM_CrowdB": [
+      "Crowd"
+    ],
+    "SM_CrowdC": [
+      "Crowd"
+    ]
+  },
+  "seats": {
+    "file": "crowd.bin",
+    "count": 32840,
+    "record": "float32 x, y, z, yaw, section (little-endian), after an int32 count",
+    "section_a": 16420,
+    "section_b": 16420
+  },
+  "ad_boards": {
+    "wall_boards": 63,
+    "wall_board_length": 6.0375,
+    "wall_band_z": [
+      0.18000000000000002,
+      1.12
+    ],
+    "note": "U advances 1.0 per board, left to right seen from the field. The same slot also covers the LED ribbons on the upper-deck fascias."
+  },
+  "field_wall": {
+    "half_x": 64.5,
+    "half_y": 33.8,
+    "corner_radius": 3.4,
+    "height": 1.3
+  },
+  "camera_clear_volume": {
+    "abs_x_below": 75.0,
+    "y": [
+      -62.0,
+      -30.0
+    ],
+    "z_above": 17.0,
+    "highest_geometry_under_it": 16.575999999999993
+  },
+  "suggested_props": {
+    "SM_Goalpost": [
+      {
+        "pos": [
+          54.86,
+          0,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -54.86,
+          0,
+          0
+        ],
+        "yaw": 3.141592653589793
+      }
+    ],
+    "SM_Pylon": [
+      {
+        "pos": [
+          -45.72,
+          -24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -45.72,
+          24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          45.72,
+          -24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          45.72,
+          24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -54.86,
+          -24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -54.86,
+          24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          54.86,
+          -24.38,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          54.86,
+          24.38,
+          0
+        ],
+        "yaw": 0.0
+      }
+    ],
+    "SM_Bench": [
+      {
+        "pos": [
+          -13.5,
+          30.2,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -4.5,
+          30.2,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          4.5,
+          30.2,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          13.5,
+          30.2,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -13.5,
+          -30.2,
+          0
+        ],
+        "yaw": 3.141592653589793
+      },
+      {
+        "pos": [
+          -4.5,
+          -30.2,
+          0
+        ],
+        "yaw": 3.141592653589793
+      },
+      {
+        "pos": [
+          4.5,
+          -30.2,
+          0
+        ],
+        "yaw": 3.141592653589793
+      },
+      {
+        "pos": [
+          13.5,
+          -30.2,
+          0
+        ],
+        "yaw": 3.141592653589793
+      }
+    ],
+    "SM_Cooler": [
+      {
+        "pos": [
+          -17.2,
+          30.4,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          17.2,
+          30.4,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          -17.2,
+          -30.4,
+          0
+        ],
+        "yaw": 3.141592653589793
+      },
+      {
+        "pos": [
+          17.2,
+          -30.4,
+          0
+        ],
+        "yaw": 3.141592653589793
+      }
+    ],
+    "SM_ChainPole": [
+      {
+        "pos": [
+          -4.572,
+          26.279999999999998,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          4.572,
+          26.279999999999998,
+          0
+        ],
+        "yaw": 0.0
+      }
+    ],
+    "SM_DownBox": [
+      {
+        "pos": [
+          -4.572,
+          26.88,
+          0
+        ],
+        "yaw": 0.0
+      }
+    ],
+    "SM_Camera": [
+      {
+        "pos": [
+          -34.0,
+          31.0,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          34.0,
+          31.0,
+          0
+        ],
+        "yaw": 0.0
+      },
+      {
+        "pos": [
+          0.0,
+          -31.0,
+          0
+        ],
+        "yaw": 3.141592653589793
+      },
+      {
+        "pos": [
+          60.5,
+          -8.0,
+          0
+        ],
+        "yaw": -1.5707963267948966
+      }
+    ],
+    "SM_KickTee": [
+      {
+        "pos": [
+          -13.716,
+          0,
+          0
+        ],
+        "yaw": 0.0
+      }
+    ]
+  }
+}
